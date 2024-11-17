@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="pgtitle"></title>
-    <script src="../articlejs/article-handler.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/articlejs/article-handler.js"></script>
 </head>
-<body>
-    <div id="pgbody"></div>
+<body id="docbody">
+    <header>
+        <a href="/" title="Home | The Open News Project">
+            <img src="/logo.png" alt="The Open News Project">
+        </a>
+    </header>
+    <main>
+        <h1 id="article-title"></h1> <!-- Article title will be inserted here -->
+        <div id="pgbody"></div>
+    </main>
+    <footer>
+        &copy; <span id="currentYear"></span> The Open News Project, All Rights Reserved
+    </footer>
+    <script>
+        window.addEventListener("load", load()); // Set up load event for the entire window
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
