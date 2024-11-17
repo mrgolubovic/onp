@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | The Open News Project</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="articlejs/article-handler.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="/">
+                <img src="/logo.png" alt="The Open News Project" class="logo">
+            </a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search articles..." oninput="searchArticles()" class="search-input">
+        </div>
+    </header>
+    <main>
+        <div id="pgbody" class="articles-container"></div>
+    </main>
+    <footer>
+        &copy; <span id="currentYear"></span> The Open News Project
+    </footer>
+    <script>
+        window.addEventListener("load", check);
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
