@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/**
+{
+    font-family: "Roboto", serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+*/
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d2d2d;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-container .logo {
+    height: 50px;
+}
+
+/* Main Content */
+main {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-grow: 1;
+}
+
+/* Articles Container */
+.articles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+/* Article Card */
+/* Article Card */
+.article-content {
+    background-color: white;
+    padding: 20px; /* Adds space between text and container edges */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px; /* Optional: Adds space between article cards if there are multiple */
+}
+
+/* Hover Effect for Articles */
+.article-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Article Title and Content */
+h1 {
+    font-size: 26px;
+    color: #2d2d2d;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Hover Effect for Articles */
+.article-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Bar */
+.search-container {
+    flex-grow: 1;
+    text-align: right;
+    width: 100%;
+}
+
+.search-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    border-color: #5e9cd7;
+    outline: none;
+}
+
+/* Footer (optional) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .logo-container .logo {
+        height: 40px;
+    }
+
+    .search-input {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .article-content {
+        padding: 15px;
+    }
+}
+
+/* Footer (for both pages) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 14px;
+    margin-top: 30px;
+}
